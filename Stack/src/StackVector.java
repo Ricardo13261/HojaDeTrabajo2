@@ -11,31 +11,49 @@ import java.util.Vector;
  *
  * @author Alejo
  */
-public class StackVector <E> implements Stack<E>{
-
+public class StackVector <E>  extends Vector<E> implements Stack<E>{
+   
+    protected Vector<E> data;
+    private int contador=0;
+    
+    public StackVector()
+	// post: constructs a new, empty stack
+	{
+		data = new Vector<E>();
+        }
+    
     @Override
-    public void push(E item) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+      public void push(E item) 
+    {
+        data.addElement(item);
+        contador=contador+1;
     }
 
     @Override
-    public E pop() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public E pop() 
+    {       
+        E var= data.remove(contador);
+        contador = contador-1;
+        return var;
     }
 
     @Override
-    public E peek() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public E peek()
+    {
+       return data.elementAt(contador);       
     }
 
     @Override
-    public boolean empty() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public boolean empty() 
+    {
+        data.clear();
+        return false;
     }
 
     @Override
-    public int size() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int size() 
+    {
+        return data.size();
     }
     
     
