@@ -11,22 +11,20 @@ import java.util.Vector;
  *
  * @author Alejo
  */
-public class StackVector <E> implements Stack{
-    
-    
+public class StackVector <E> implements Stack<E>{
 
     @Override
-    public void push(Object item) {
+    public void push(E item) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Object pop() {
+    public E pop() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Object peek() {
+    public E peek() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -39,5 +37,7 @@ public class StackVector <E> implements Stack{
     public int size() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+    
+    
     
 }
