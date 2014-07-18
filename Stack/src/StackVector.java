@@ -1,3 +1,6 @@
+
+import java.util.Vector;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,7 +11,9 @@
  *
  * @author Alejo
  */
-public class StackVector implements Stack{
+public class StackVector <E> implements Stack{
+    
+    
 
     @Override
     public void push(Object item) {
