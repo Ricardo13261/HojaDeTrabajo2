@@ -53,7 +53,7 @@ public class StackVector <E>  extends Vector<E> implements Stack<E>{
     @Override
     public int size() 
     {
-        return data.size();
+        return contador;
     }
     
     
