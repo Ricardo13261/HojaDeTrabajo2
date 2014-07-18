@@ -3,13 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
-
-/**
- *
- * @author Alejo
- */
+ /**
+   * @InterfazGrafica.java  1.0 06/07/2014
+   *
+   * Universidad del Valle de Guatemala.
+   * Seccion: 21 Estructura de Datos
+   * Autor: Alejandro Carné: 13082
+   *		Ricardo Franco Carné: 13261
+   *		Kuk Ho Chung Carné: 13279
+   * Stack: saca y guarda datos en la pila
+   *
+   */
 public interface Stack<E> 
 {
 
