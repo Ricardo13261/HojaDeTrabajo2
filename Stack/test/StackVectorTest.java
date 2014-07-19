@@ -31,7 +31,7 @@ public class StackVectorTest {
      */
     @Test
     public void testPush() {
-        System.out.println(3);
+        System.out.println("push");
         int item = 3;
         StackVector<Integer> instance = new StackVector<Integer>();
         instance.push(item);

@@ -18,11 +18,11 @@ public class Principal{
   public static void main(String[] args) {
     Stack<Integer> miStack = new StackVector<Integer>();
         miStack.push(3);  //1
-	//miStack.push(2);   //2
+	miStack.push(2);   //2
         
         int cadena = miStack.pop();
         System.out.println(cadena);	
-        //int cadena1=miStack.pop();
-       // System.out.println(cadena1);
+        int cadena1=miStack.pop();
+        System.out.println(cadena1);
   }
 }
