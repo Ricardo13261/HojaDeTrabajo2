@@ -31,11 +31,13 @@ public class StackVectorTest {
      */
     @Test
     public void testPush() {
-        System.out.println("push");
-        Object item = null;
-        StackVector instance = new StackVector();
+        System.out.println(3);
+        int item = 3;
+        StackVector<Integer> instance = new StackVector<Integer>();
         instance.push(item);
         // TODO review the generated test code and remove the default call to fail.
+        int result = instance.pop();
+        assertEquals(item, result);
         fail("The test case is a prototype.");
     }
 
@@ -45,12 +47,14 @@ public class StackVectorTest {
     @Test
     public void testPop() {
         System.out.println("pop");
-        StackVector instance = new StackVector();
-        Object expResult = null;
-        Object result = instance.pop();
+        StackVector<Integer> instance = new StackVector<Integer>();
+        int expResult = 3;
+        instance.push(expResult);
+        expResult = 2;
+        instance.push(expResult);
+        int result = instance.pop();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");        
     }
 
     /**
