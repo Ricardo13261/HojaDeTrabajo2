@@ -14,13 +14,16 @@
    * Stack: saca y guarda datos en la pila
    *
    */
-public class Principal {
+public class Principal{
+  public static void main(String[] args) {
+    Stack<Integer> miStack = new StackVector<Integer>();
+        miStack.push(1);  //1
+	miStack.push(2);   //2
+      
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+        int cadena = miStack.pop();
+        System.out.println(cadena);	
+        int cadena1=miStack.pop();
+        System.out.println(cadena1);
+  }
 }

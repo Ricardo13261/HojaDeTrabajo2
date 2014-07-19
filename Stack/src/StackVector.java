@@ -32,9 +32,8 @@ public class StackVector <E>  extends Vector<E> implements Stack<E>{
     @Override
     public E pop() 
     {       
-        E var= data.remove(contador);
-        contador = contador-1;
-        return var;
+        return data.remove(0);
+        
     }
 
     @Override
@@ -55,6 +54,8 @@ public class StackVector <E>  extends Vector<E> implements Stack<E>{
     {
         return contador;
     }
+    
+    
     
     
     
