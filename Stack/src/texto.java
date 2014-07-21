@@ -1,18 +1,17 @@
 import java.io.*;     //libreria para la lectura de archivos
 import java.util.ArrayList;
 public class texto {
-int dato1,dato2;
-private char dato3;
-private String operacion, operando;
+private int dato1,dato2;
+private String operacion;
 private char[] cadena_caracteres;
-private Stack<String>opc;
+
 private Stack<Integer>datos;
 private ArrayList<Integer>resultados;
 
 public texto()
 {
 	cadena_caracteres= new char[100];
-	opc = new StackVector<String>();
+	
 	datos = new StackVector<Integer>();
 	resultados = new ArrayList<Integer>();
 	
