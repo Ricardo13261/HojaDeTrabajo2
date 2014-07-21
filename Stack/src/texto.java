@@ -57,7 +57,7 @@ public void leer(String nombreArchivo) {
 	}
 	
 }
-private static int Operacion(int dato1,int dato2, char op)
+public static int Operacion(int dato1,int dato2, char op)
 {
 	int resultado=0;
 	if(op=='+')
