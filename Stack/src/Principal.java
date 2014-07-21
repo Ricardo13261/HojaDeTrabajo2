@@ -17,9 +17,12 @@
 public class Principal{
   public static void main(String[] args) {
     Stack<Integer> miStack = new StackVector<Integer>();
+        
+        texto T= new texto();		//leendo el .txt
+	T.leer("Formulas.txt");
+        
         miStack.push(3);  //1
 	miStack.push(2);   //2
-        
         int cadena = miStack.pop();
         System.out.println(cadena);	
         int cadena1=miStack.pop();
