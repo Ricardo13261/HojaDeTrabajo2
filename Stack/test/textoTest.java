@@ -55,14 +55,14 @@ public class textoTest {
     @Test
     public void testOperacion() {
         System.out.println("Operacion");
-        int dato1 = 0;
-        int dato2 = 0;
-        char op = ' ';
-        int expResult = 0;
+        int dato1 = 2;
+        int dato2 = 5;
+        char op = '+';
+        int expResult = 7;
         int result = texto.Operacion(dato1, dato2, op);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
